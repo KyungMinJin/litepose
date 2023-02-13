@@ -23,7 +23,7 @@ DATASET:
   MAX_TRANSLATE: 40
   MIN_SCALE: 0.75
   NUM_JOINTS: 14
-  ROOT: '/dataset/crowdpose'
+  ROOT: './dataset/crowdpose'
   TEST: test
   TRAIN: trainval
 DEBUG:
@@ -76,7 +76,7 @@ TRAIN:
   END_EPOCH: 2400
   GAMMA1: 0.99
   GAMMA2: 0.0
-  IMAGES_PER_GPU: 16
+  IMAGES_PER_GPU: 4 # 16
   LR: 4e-3
   LR_FACTOR: 0.1
   LR_STEP: [36000, 40000]
